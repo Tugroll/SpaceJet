@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81843510976dd9b4089e1e78ba65501f, type: 3}
+  m_Name: Octopus Enemy Shooting
+  m_EditorClassIdentifier: 
+  attackDelay: 3
+  VFX: {fileID: 398227778186680765, guid: 3e7ed1d9c61ca61478c7d2f91bc02f39, type: 3}
+  weaponSFX: {fileID: 0}

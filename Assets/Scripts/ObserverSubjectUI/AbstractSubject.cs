@@ -16,7 +16,7 @@ namespace SpaceJet.Observe
         {
             observer.Remove(action);
         }
-        public void OnNotify(int action)
+        public void OnNotify(ActionData action)
         {
             observer.ForEach((observers) => { observers.OnNotify(action); });
         }

@@ -11,6 +11,9 @@ namespace SpaceJet.Weapon
         protected float attackDelay = 0.2f;
         public float attackdelay => attackDelay;
 
+        [SerializeField] Sprite sprite;
+        public Sprite _sprite => sprite;
+
         [SerializeField]
         protected AudioClip weaponSFX;
 

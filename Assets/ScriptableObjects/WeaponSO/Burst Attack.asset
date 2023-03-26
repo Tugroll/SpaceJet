@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Burst Attack
   m_EditorClassIdentifier: 
   attackDelay: 0.7
+  sprite: {fileID: 21300000, guid: 908b71b481e546b459091d69cd108d84, type: 3}
   weaponSFX: {fileID: 8300000, guid: 233c1df1b7152104194126d64db3d1e4, type: 3}
   projectile: {fileID: 8735426833441098796, guid: f816b70780456a34497ab0a5a09dcdb9, type: 3}
   offset: 0.8

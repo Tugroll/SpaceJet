@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Double Attack
   m_EditorClassIdentifier: 
   attackDelay: 0.5
+  sprite: {fileID: 21300000, guid: d526b3bfc705c2e4abae2f23e0142eb7, type: 3}
   weaponSFX: {fileID: 8300000, guid: 7d29d7c5d537d434a93ed2dc11e93849, type: 3}
   projectile: {fileID: 8735426833441098796, guid: f816b70780456a34497ab0a5a09dcdb9, type: 3}
   offsetFromStartPoint: 0.5

@@ -10,6 +10,7 @@ namespace SpaceJet.Weapon
         public GameObject projectile;
         public override void Perform(Transform shootingStartPoint)
         {
+            projectile.GetComponent<SpriteRenderer>().sprite = _sprite;
             Instantiate(projectile, shootingStartPoint.position, shootingStartPoint.rotation);
         }
     }

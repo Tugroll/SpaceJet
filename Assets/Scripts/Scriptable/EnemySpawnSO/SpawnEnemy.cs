@@ -22,7 +22,7 @@ public class SpawnEnemy : EnemySpawnerBase
 
             for (int i = 0; i < maxEnemies; i++)
             {
-                int randomke = UnityEngine.Random.Range(0, 2);
+                int randomke = UnityEngine.Random.Range(0, 3);
                 Vector3 spawnPoint = new Vector3(UnityEngine.Random.Range(minX, maxX), pos.position.y, 0);
                 GameObject newEnemy = Instantiate(enemy[randomke].gameObject, spawnPoint, Quaternion.Euler(0, 0, -90));
                 currentEnemy.Add(newEnemy);

@@ -11,6 +11,7 @@ namespace SpaceJet.Weapon
         public float offsetFromStartPoint = .4f;
         public override void Perform(Transform shootingStartPoint)
         {
+            projectile.GetComponent<SpriteRenderer>().sprite = _sprite;
             Vector3 offset = shootingStartPoint.rotation * new Vector3(offsetFromStartPoint, 0, 0);
 
             Vector3 point1 = shootingStartPoint.position + offset;

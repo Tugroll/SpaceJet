@@ -1,15 +1,12 @@
+using SpaceJet.Observe;
 using SpaceJet.Stats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerDeathUI : MonoBehaviour
+public class PlayerDeathUI : AbstractSubject
 {
-
-
-
-
 
     public InGameMenu loseScreen;
 
@@ -24,6 +21,10 @@ public class PlayerDeathUI : MonoBehaviour
 
     private void OnEnable()
     {
+        foreach (Transform item in liveImagesUIParent)
+        {
+            lives.Add(item.GetComponent<Image>());
+        }
         if (_health == null)
         {
             _health = GetComponent<Health>();

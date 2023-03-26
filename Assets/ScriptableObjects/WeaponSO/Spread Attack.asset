@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Spread Attack
   m_EditorClassIdentifier: 
   attackDelay: 0.7
+  sprite: {fileID: 21300000, guid: 902314612fa84084092a0675aa5c6f73, type: 3}
   weaponSFX: {fileID: 8300000, guid: 20b0de96155baa447998dd4147c5fa02, type: 3}
   projectile: {fileID: 8735426833441098796, guid: f816b70780456a34497ab0a5a09dcdb9, type: 3}
   angleDegrees: 5

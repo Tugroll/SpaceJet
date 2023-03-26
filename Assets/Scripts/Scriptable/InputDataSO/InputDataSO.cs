@@ -19,7 +19,7 @@ namespace SpaceJet.PlayerInput
             {
                 weapon.PerformAttack();
             }
-            if (Input.GetKey(swapWeapon))
+            if (Input.GetKeyDown(swapWeapon))
             {
                 weapon.SwapWeapon();
             }

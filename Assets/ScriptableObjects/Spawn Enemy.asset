@@ -16,8 +16,9 @@ MonoBehaviour:
   timeMax: 0.3
   maxEnemies: 4
   startDelay: 10
-  currentWave: 0
+  currentWave: 5
   currentEnemy: []
   enemy:
   - {fileID: 6213595567998338359, guid: 8c71bcf285e510e4e984635e0d3a3f92, type: 3}
   - {fileID: 6213595567998338359, guid: 86f243a5370c8d348a19ea5318aa4714, type: 3}
+  - {fileID: 6213595567998338359, guid: 3730b75717fc34b49becbad9c978b799, type: 3}

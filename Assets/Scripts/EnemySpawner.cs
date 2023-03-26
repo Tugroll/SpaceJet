@@ -18,7 +18,7 @@ public class EnemySpawner : AbstractSubject
         [SerializeField] EnemySpawnerBase obstaclesSpawner;
         void Start()
         {
-            AddObserver(FindObjectOfType<ScoreSystem>());
+            AddObserver(FindObjectOfType<UIObserver>());
 
             StartCoroutine(enemySpawner.SpawnWithDelay(boxCollider, this.transform, this));
             StartCoroutine(obstaclesSpawner.SpawnWithDelay(boxCollider, this.transform, this));
@@ -30,12 +30,12 @@ public class EnemySpawner : AbstractSubject
             enemySpawner.currentEnemy.Remove(enemy.gameObject);
             if (playerKill)
             {
-                OnNotify(1);
+                OnNotify(ActionData.score);
 
             }
             if (enemySpawner.currentWave >= waveCount && enemySpawner.currentEnemy.Count == 0)
             {
-                OnNotify(1);
+                OnNotify(ActionData.score);
                 winScreen.Toggle();
                 return;
             }
